@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('username', usernameinput.value.trim());
         contentgame.classList.remove('hidden');
         document.getElementById('welcome-page').classList.add('hidden');
+        document.getElementById('playername').textContent = usernameinput.value.trim();
 
         const countdown = () => {
             let count = 3;

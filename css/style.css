@@ -127,26 +127,42 @@ select {
 }
 
 
-
 .containergame {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .containergame img{
-    padding-right: 150px;
-    padding-top: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.textgame  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 560px;
+    padding-right: 200px;
+}
+
+.textgame ul li{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
-.textgame ul li{
+.textgame ul{
     display: flex;
-    gap: 10px;
-    list-style-type: none;
+    gap: 15px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .textgame h1{
     text-align: center;
-    padding-right: 20px;
 }
