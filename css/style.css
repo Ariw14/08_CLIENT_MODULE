@@ -1,13 +1,14 @@
-body{
+/* body {
     text-align: center;
     align-items: center;
     vertical-align: middle;
     height: 600px;
     line-height: 600px;
-}
+} */
 
 .container {
     display: inline-block;
+    padding-top: 150px;
 }
 
 
@@ -26,7 +27,7 @@ body{
     padding-bottom: 100px;
 }
 
-.welcome-page h2{
+.welcome-page h2 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,13 +38,14 @@ body{
     align-items: center;
 }
 
-.input{
+.input {
     display: grid;
     gap: 10px;
     margin-top: 20px;
 }
 
-.input input, select{
+.input input,
+select {
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -61,7 +63,7 @@ body{
     box-shadow: black;
 }
 
-.btngroup button{
+.btngroup button {
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
@@ -69,19 +71,20 @@ body{
     box-shadow: 0 2px 4px;
 }
 
-.btnstart{
+.btnstart {
     background-color: greenyellow;
     border: none;
     box-shadow: black, 10px 10px;
 }
-.btninstruction{
+
+.btninstruction {
     background-color: red;
     border: none;
     box-shadow: black, 10px 10px;
-    
+
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -101,8 +104,7 @@ body{
 .instructiontext {
     position: relative;
     text-align: left;
-    top: 0;
-    
+    font-size: 20px;
 }
 
 .closebtn {
@@ -110,18 +112,41 @@ body{
     float: right;
     align-items: end;
     background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
     border: none;
     border-radius: 2px;
-    
+    padding: 10px 20px;
+
 }
 
-.instructiontext ul li{
+.instructiontext ul li {
     list-style-type: none;
     text-align: left;
 }
 
 
 
+.containergame {
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.containergame img{
+    padding-right: 150px;
+    padding-top: 100px;
+}
 
 
+.textgame ul li{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
 
+.textgame h1{
+    text-align: center;
+    padding-right: 20px;
+}
