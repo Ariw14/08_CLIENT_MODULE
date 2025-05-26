@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOMBSKUY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<center>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="welcome-page" id="welcome-page">
+                    <img src="assets/Images/logo.png" alt="">
+                    <div class="input">
+                        <input type="text" name="username" id="username" placeholder="Input Username" class="username">
+                        <select name="level" id="level">
+                            <option value="" disabled selected>Select Level</option>
+                            <option value="easy" id="easy" name="easy">easy</option>
+                            <option value="medium" id="medium" name="medium">medium</option>
+                            <option value="hard" id="hard" name="hard">hard</option>
+                        </select>
+                        <div class="btngroup">
+                            <button class="btnstart" name="btnstart" id="btnstart" aria-label="start game">START GAME</button>
+                            <button class="btninstruction" name="btninstruction" id="instruction">INSTRUCTION</button>
+                        </div>
+                        <div id="instructionbox" class="hidden">
+                            <div class="instructiontext">
+                                <button class="closebtn" id="closeBtn" aria-label="close instruction">X</button>
+                                <h2>HOW TO PLAY GAME !</h2>
+                                <ul>
+                                    <li>1. Input Username</li>
+                                    <li>2. Put the bomb</li>
+                                    <li>3. Blow up as many walls as possible</li>
+                                    <li>4. Blow up enemies</li>
+                                    <li>5. Enjoy!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="countdownstart" class="hidden"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-game" class="content-game">
+                <div class="game">
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</center>
+
+</html>
